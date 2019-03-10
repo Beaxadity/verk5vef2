@@ -60,6 +60,9 @@ a:hover {
 .mynd {
   display: flex;
   justify-content: center;
+  align-content: center;
+  margin-left: 20em;
+  margin-right: 20em;
 }
 h1 {
   display: flex;
@@ -69,8 +72,31 @@ p {
   justify-content: center;
 }
 
+.icomoon a{
+  display: inline;
+  /*color: mediumseagreen*/;
+}
 
+.logo {
+  padding-bottom:none;
+  margin-bottom:none;
+}
 
+.reddit {
+  color: black;
+}
+
+.twitch {
+  color:purple;
+}
+
+.youtube {
+  color:red;
+}
+
+.soundcloud {
+  color:orange;
+}
 
 @media screen and (min-width: 500px){
 body {
@@ -128,4 +154,8 @@ a {
 a:hover {
   color: mediumaquamarine;
 }
+}
+
+.icomoon{
+  
 }
