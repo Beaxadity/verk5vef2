@@ -53,7 +53,7 @@ a {
   text-decoration: none; }
 
 a:hover {
-  color: tan; }
+  color: darkcyan; }
 
 .mynd {
   display: flex;
@@ -88,6 +88,65 @@ p {
 
 .soundcloud {
   color: orange; }
+
+@keyframes background-change {
+  0% {
+    background-color: magenta; }
+  10% {
+    background-color: yellowgreen; }
+  20% {
+    background-color: tan; }
+  30% {
+    background-color: yellow; }
+  40% {
+    background-color: blue; }
+  50% {
+    background-color: red; }
+  60% {
+    background-color: khaki; }
+  70% {
+    background-color: lightgreen; }
+  80% {
+    background-color: beige; }
+  90% {
+    background-color: turquoise; }
+  100% {
+    background-color: magenta; } }
+@keyframes hrist {
+  25% {
+    transform: rotate(15deg); }
+  50% {
+    transform: rotate(-15deg); }
+  75% {
+    transform: rotate(15deg); }
+  100% {
+    transform: rotate(-15deg); } }
+@keyframes run {
+  to {
+    transform: translateX(-100em); } }
+.nob {
+  align-content: center;
+  animation-name: background-change;
+  animation-duration: 20s;
+  animation-iteration-count: infinite; }
+
+.myndi {
+  width: 15%;
+  height: auto;
+  margin: 2em;
+  animation-name: hrist;
+  animation-iteration-count: infinite;
+  animation-duration: 1s; }
+
+.myndi2 {
+  position: absolute;
+  right: -200px;
+  width: 14.00625%;
+  height: auto;
+  margin: 2em;
+  animation-name: run;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
 
 @media screen and (min-width: 500px) {
   body {
@@ -134,7 +193,7 @@ p {
     border-bottom: 0; }
 
   a {
-    color: gold;
+    color: darkcyan;
     display: inline;
     padding: 9px 18px;
     text-decoration: none; }
