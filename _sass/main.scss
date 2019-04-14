@@ -147,8 +147,64 @@ p {
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+table {
+  border: 1px solid white;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2em;
+}
+table tr {
+  background-color: lightgray;
+  border: 1px solid whitesmoke;
+  padding: .35em;
+}
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+tbody tr:nth-child(even) {
+  background: white;
+}
+table caption {
+  font-display: bold;
+  font-size: 0.75cm;
+}
 
 @media screen and (min-width: 500px){
+  table thead {
+    border: none;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid ;
+    display: block;
+  }
+
+  table td {
+    border-bottom: 1px solid whitesmoke;
+    display: block;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+  }
+
+  tbody tr:nth-child(even) {
+    background: white;
+  }
+
 body {
   background: navajowhite;
   text-align: center;
